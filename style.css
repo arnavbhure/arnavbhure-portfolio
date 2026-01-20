@@ -26,9 +26,10 @@
 }
 
 .nav-bar-part-1-style a{
+    font-size: 16px;
     text-decoration: none;
     font-weight: 450;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.06rem;
 }
 
 .nav-bar-icon{
@@ -38,9 +39,8 @@
 }
 
 .nav-bar-icon img{
-    margin-right: rem;
     height: 100px;
-}
+} 
 
 .nav-bar-links{
     font-size: 1.4rem;
@@ -50,14 +50,17 @@
     align-items: center;
 }
 
-.nav-bar-link-style{
+.nav-bar-link-style i{
+    background-color: white;
+    color: black;
     font-size: 1.7rem;
-    transition: 0.2s ease-in-out;
+    transition: 0.25s ease-in-out;
 }
-.nav-bar-link-style img{
-    width: 50px;
-    transition: 0.2s ease-in-out;
+
+.nav-bar-link-style{
+    transition: 0.25s ease-in-out;
 }
+
 .nav-bar-link-style:hover{
     margin-bottom: 6px;
 }
@@ -89,8 +92,70 @@
 .whatsapp i{
     color: green;
 }
+
+.hero-section-content{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+}
+
 .hero-image img{
-    height: 700px;
-    width: 50%;
-    padding : 0rem 0rem 2rem 4rem;
+    height: 600px;
+}
+.hero-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-heading{
+    font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 75%;
+    font-weight: bolder;
+    font-size: 3.1rem;
+    letter-spacing: 0.15rem;
+}
+.hero-content{
+    font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.04rem;
+}
+
+.hero-contact{
+    width: 18%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero-contact a ,i {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.04rem;
+    background-color: black;
+    color: white;
+}
+.hero-contact {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 45px;
+}
+.hero-contact:hover{
+    color: black;
+    background-color: white;
+}
+.hero-contact:hover a{
+    color: black;
+    background-color: white;
+}
+.hero-contact:hover i{
+    color: black;
+    background-color: white;
 }
