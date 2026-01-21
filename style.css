@@ -26,7 +26,7 @@
 }
 
 .nav-bar-part-1-style a{
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
     font-weight: 450;
     letter-spacing: 0.06rem;
@@ -94,7 +94,7 @@
 }
 
 .hero-section-content{
-    height: 400px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -106,7 +106,7 @@
 }
 
 .hero-image img{
-    height: 600px;
+    height: 650px;
 }
 .hero-image{
     width: 100%;
@@ -120,6 +120,7 @@
     font-weight: bolder;
     font-size: 3.1rem;
     letter-spacing: 0.15rem;
+    color: #00241B;
 }
 .hero-content{
     font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -151,6 +152,10 @@
     color: black;
     background-color: white;
 }
+.color-text{
+    color: #4E878C;
+}
+
 .hero-contact:hover a{
     color: black;
     background-color: white;
@@ -159,3 +164,127 @@
     color: black;
     background-color: white;
 }
+
+/* About me*/
+
+.about-me-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.about-me-heading{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.about-me-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45%;
+    width: 60%;
+    border-radius: 35px;
+    box-shadow: 5px 5px 5px 5px rgb(131, 125, 131);
+    transition: 0.5s ease-in-out;
+}
+.about-me-content:hover{
+    transform: scale(1.03);
+}
+.about-me-content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    height: 70%;
+}
+.about-me-content-box p{
+    color: #00241B;
+    line-height: 1.75rem;
+    font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 515;
+    letter-spacing: 0.05rem;
+}
+
+/*Project Section*/
+
+.project-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.project-style{
+    padding-top: 10px;
+    font-weight: 850;
+    font-size: 1.2rem;
+    color: #680544;
+    background-color: white;
+    text-align: center;
+    width: 30%;
+    height: 300px;
+    box-shadow: 5px 5px 5px 5px rgb(133, 146, 155);
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: 0.5s ease;
+}
+
+.project-style:hover{
+    margin: 2px;
+    transform: scale(1.041);
+}
+
+.project-heading{
+    font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: 600;
+    color: #00241B;
+    margin-bottom: 3.2rem;
+    letter-spacing: 0.1rem;
+    font-size: 3.2rem;
+    letter-spacing: 0.3rem;
+}
+.project-1-heading{
+    font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    color : #00241B;
+    font-size: 1.8rem;
+    padding-top : 1rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+.project-1-content , .project-1-content p{
+    font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.project-repo-link{
+    margin-top: 1rem;
+}
+
+.project-repo-link i{
+    background-color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #4a8085;
+}
+.project-repo-link i:hover{
+    color: #00241B;
+}
+
+
+
