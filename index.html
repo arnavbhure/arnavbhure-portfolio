@@ -10,12 +10,12 @@
 </head>
 <body>
 <header>
-    <div class="nav-bar">
+    <div class="nav-bar" id="home">
         <div class="nav-bar-part-1">
-            <div class="nav-bar-part-1-style"><a href="">Home</a></div>
-            <div class="nav-bar-part-1-style"><a href="">About</a></div>
-            <div class="nav-bar-part-1-style"><a href="">Projects</a></div>
-            <div class="nav-bar-part-1-style"><a href="">Contact</a></div>
+            <div class="nav-bar-part-1-style"><a href="#home">Home</a></div>
+            <div class="nav-bar-part-1-style"><a href="#about">About</a></div>
+            <div class="nav-bar-part-1-style"><a href="#projects">Projects</a></div>
+            <div class="nav-bar-part-1-style"><a href="#contact">Contact</a></div>
 
         </div> 
 
@@ -64,7 +64,7 @@
 
                 
                 
-    <div class="about-me-section">
+    <div class="about-me-section" id="about">
         <div class="about-me-heading">About Me</div>
 
         <div class="about-me-content">
@@ -101,9 +101,80 @@
 
         </div>
 
+<!--Skills Section-->
+        <div class="skills-heading">Skills</div>
+        <div class="skill-flex">
+        <div class="skill-section">
+
+            <div class="skills-all">
+                <div class="skill"><div class="c-image"><img src="images/c-.png" alt="img"></div></div>
+                <div class="skill"><i class="fa-brands fa-html5"></i> <p>HTML</p></div>
+                <div class="skill"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+                <div class="skill"><i class="fa-brands fa-js"></i><p>JS</p></div>
+                <div class="skill"><i class="fa-brands fa-python"></i><p>Python</p></div>
+                <div class="skill"><i class="fa-solid fa-database"></i><p>Postgre SQL</p></div>
+                <div class="skill"><i class="fa-brands fa-github"></i><p>GitHub</p></div>
+                <div class="skill"><i class="fa-brands fa-git-alt"></i></i><p>Git</p></div>
+            </div>
+        </div>
+        </div>
+
+ <!--Coding Profile Sections-->
+        <div class="coding-profile-heading">Coding Profiles</div>
+        <div class="coding-profile-flex">
+           
+        <div class="coding-profile">
+
+                <div class="coding-profile-box"><img src="images/icons8-codeforces-100.png" alt="">Codeforces <button><a href="https://codeforces.com/profile/arnavbhure" target="_blank">View profile</a></button></div>
+                <div class="coding-profile-box"><img src="images/icons8-codechef-100.png" alt="">CodeChef <button><a href="https://www.codechef.com/users/arnavbhure" target="_blank">View profile</a></button></div>
+                <div class="coding-profile-box"><img src="images/icons8-leetcode-96.png" alt="">LeetCode <button><a href="https://leetcode.com/u/arnavbhure/" target="_blank">View profile</a></button></div>
+                <div class="coding-profile-box"><img src="images/icons8-hackerrank-96.png" alt="">HackerRank <button><a href="https://www.hackerrank.com/profile/arnavbhure1208" target="_blank">View profile</a></button></div>               
+                <div class="coding-profile-box"><img src="images/icons8-geeksforgeeks-48.png" alt="">GeeksforGeeks <button><a href="https://www.geeksforgeeks.org/profile/arnavbhu16wp" target="_blank">View profile</a></button></div>
+                <div class="coding-profile-box"><img src="images/codolio.svg" alt="">Codolio<button><a href="https://codolio.com/profile/arnavbhure" target="_blank">View profile</a></button></div>
+            </div>
+        </div>
+        </div>
 
 </main>
 
+<footer>
+    <!--Contact Me section -->
+        <div class="contact-me-flex" id="contact">
+            <div class="contact-me">
+                <div class="contact-me-part-1">
+                    <div class="contact-me-heading">Contact Me</div>
+
+                    <div class="contact-email">
+                        <div class="email-heading">Email</div>
+                        arnavbhure1208@gmail.com
+                    </div>
+
+                 </div>
+                
+                 <div class="contact-me-part-2">
+                    <div class="contact-part-2-heading">Get in Touch</div>
+                    <form action="">
+                        <div class="name-section">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+
+                            <div class="contact-email-input"><input type="email" placeholder="Your email" required></div>
+                            <div class="phone-number"><input type="tel" name="phone" placeholder="Phone Number (optional)"pattern="[0-9]{10}"></div>
+                            <textarea name="message" id="" placeholder="Enter your message here....."  required></textarea>
+                            <div class="submit-button"><button type="submit">Submit</button></div>
+                    </form>
+                 </div>
+
+            </div>
+
+        </div>
+
+<hr>
+
+<div class="end-message"><p>~ Made With <i class="fa-solid fa-heart"></i> by <b>arnavbhure </b></p></div>
+
+</footer>
 
 </body>
 </html>
