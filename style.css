@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 *{
     background-color: #ffffff;
     margin: 0;
@@ -27,6 +33,7 @@
 
 .nav-bar-part-1-style a{
     font-size: 18px;
+    background-color: white;
     text-decoration: none;
     font-weight: 450;
     letter-spacing: 0.06rem;
@@ -216,10 +223,26 @@
 /*Project Section*/
 
 .project-section{
+    background: -webkit-radial-gradient(
+  circle at top,
+  #ffffff 0%,
+  #f9fafb 40%,
+  #eef2f7 75%,
+  #e5eaf0 100%
+);
+background: radial-gradient(
+  circle at top,
+  #ffffff 0%,
+  #f9fafb 40%,
+  #eef2f7 75%,
+  #e5eaf0 100%
+);
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2.5rem;
+    height: 800px;
 }
 
 .project-style{
@@ -231,7 +254,7 @@
     text-align: center;
     width: 30%;
     height: 300px;
-    box-shadow: 5px 5px 5px 5px rgb(133, 146, 155);
+    box-shadow: 5px 5px 5px 5px rgb(174, 175, 177);
     border-radius: 20px;
     margin-top: 30px;
     transition: 0.5s ease;
@@ -286,5 +309,301 @@
     color: #00241B;
 }
 
+/* Skills Section Styling*/
+.skills-heading{
+    font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 8.5rem;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 550;
+    letter-spacing: 0.4rem;
+    color: #00241B;
+}
+.c-image img{
+    width: 50px;
+}
+.skill-flex{
+    display: flex;
+    justify-content: center;
+}
+.skill-section{
+    margin-top : 4rem;
+    margin-bottom : 4rem;
+    border-radius: 35px;
+    box-shadow: 5px 5px 5px 5px rgb(28, 27, 27);
+    height: 400px;
+    width: 80%;
+}
+.skill{
+    background-color: #00241B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 14%;
+    height: 120px;
+    box-shadow: 5px 5px 5px 5px rgb(168, 170, 171);
+    border-radius: 25px;
+    transition: 0.5s ease;
+}
+.skill p{
+    background-color: #00241B;
+    color: #A1C2BD;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.skill i {
+    background-color: #00241B;
+    margin-bottom: 0.7rem;
+    font-size: 3rem;
+    color: #A1C2BD;
+}
+.skill img{
+    background-color: #00241B;
+}
+.skill:hover{
+    transform: scale(1.06);
+}
+.skills-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+/* Coding profiles Styling*/
+
+.coding-profile-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.coding-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 3rem;
+    height: 600px;
+    width: 60%;
+    background-color: #f4f4f6;
+    border-radius: 25px;
+    margin-bottom : 5rem;
+    box-shadow: 5px 5px 5px 5px rgb(115, 113, 113);
+}
+
+.coding-profile-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 25%;
+    background-color: #092d05;
+    gap: 0.5rem;
+    box-shadow: 5px 5px 5px 5px rgb(132, 131, 130);
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.12rem;
+    transition: 0.5s ease-in-out;
+    color: rgb(249, 238, 229);
+}
+
+.coding-profile-box:hover{
+    transform: scale(1.07);
+}
+
+.coding-profile-box button{
+    font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 2px 2px 2px 2px rgba(120, 122, 120, 0.926);
+    border-radius: 35px;
+    height: 25px;
+    width: 100px;
+    background-color: #e2e3e0;
+    transition: 0.35s  ease-in-out;
+}
+.coding-profile-box img , .coding-profile-box a{
+    background-color: #092d05;
+}
+
+.coding-profile-box button:hover{
+    transform: scale(1.08);
+}
+
+.coding-profile-box button a{
+    background-color: #e2e3e0;
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+.coding-profile-box img{
+    height: 80px;
+    width: 80px;
+}
+
+.coding-profile-heading{
+    letter-spacing: 0.3rem;
+    margin-top: 10rem;
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 500;
+    color: #094132;
+}
 
 
+/*Contact me section style*/
+
+.contact-me-flex{
+    margin-top: 5rem;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #d6e4fb;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 5px rgb(6, 6, 6);
+    width: 80%;
+    height: 90%;
+}
+.contact-me-part-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+    height: 55%;
+    background-color: #d6e4fb;
+    text-align: center;
+}
+.contact-me-heading{
+    font-family: "Montserrat" , 'Poppins', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #d6e4fb;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    color: rgb(5, 41, 5);
+}
+.contact-email{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-evenly;
+    background-color: #d6e4fb;
+    letter-spacing: 0.13rem;
+    font-size: 1.05rem;
+    color: darkblue;
+}
+.email-heading{
+    background-color: #d6e4fb;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.contact-me-part-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    box-shadow: 5px 5px 5px 5px rgb(32, 32, 32)
+}
+.name-section{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.name-section input{
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(186, 183, 183);
+    border-radius: 20px;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+}
+.contact-part-2-heading{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 450;
+    letter-spacing: 0.15rem;
+}
+.contact-me-part-2 form{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.contact-me-part-2 textarea{
+    height: 150px;
+}
+.contact-email-input , .phone-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-email-input input , .phone-number input{
+    border: 1px solid rgb(186, 183, 183);
+    border-radius: 20px;
+    height: 30px;
+    width: 270px;
+    text-align: center;
+}
+.contact-me-part-2 textarea{
+    padding: 10px;
+    border-radius: 17px;
+    border: 2px solid rgb(186, 183, 183);
+}
+.submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me-part-2 button{
+    height: 30px;
+    border-radius: 20px;
+    width: 100px;
+    transition: 0.3s ease-in-out;
+    color: white;
+    background-color: #1264FF;
+}
+.contact-me-part-2 button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.end-message{
+    margin-top: 5rem;
+    height: 80px;
+    background-color: rgb(195, 199, 201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+
+}
+.end-message i{
+    background-color: rgb(195, 199, 201);
+    color: red;
+}
+
+.end-message b , .end-message p{
+    background-color: rgb(195, 199, 201);
+    letter-spacing: 0.1rem;
+    padding-left: 10px;
+}
