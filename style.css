@@ -299,6 +299,9 @@ background: radial-gradient(
     margin-top: 1rem;
 }
 
+.project-repo-link a{
+    margin: 0.6rem;
+}
 .project-repo-link i{
     background-color: white;
     text-decoration: none;
