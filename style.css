@@ -142,11 +142,6 @@ html {
   color: #00241b;
 }
 
-.hero-content {
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.04rem;
-}
-
 .hero-contact {
   width: 150px; /* Fixed width for button */
   display: flex;
@@ -636,6 +631,8 @@ textarea {
   /* Tablet Portrait & Small Laptop */
   .hero-heading {
     font-size: 2.5rem;
+    margin: 2rem 0;
+    font-size: 2.5rem;
   }
   .project-style {
     width: 45%;
@@ -687,6 +684,7 @@ textarea {
   }
   .hero-heading {
     font-size: 2rem;
+    font-size: 2.5rem;
   }
   .hero-contact {
     margin: 0 auto;
@@ -734,10 +732,15 @@ textarea {
     width: 95%;
   }
   .contact-me-heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .name-section {
     flex-direction: column;
     gap: 15px;
+  }
+  .contact-part-2-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
   }
 }
