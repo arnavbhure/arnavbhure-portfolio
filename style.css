@@ -562,6 +562,9 @@ html {
   gap: 15px;
   flex-direction: column;
 }
+.contact-me-part-2 form button {
+  align-self: center;
+}
 
 .name-section {
   display: flex;
