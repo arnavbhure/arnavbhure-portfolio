@@ -254,7 +254,7 @@ html {
   text-align: center;
   width: 30%;
   min-width: 300px;
-  height: 300px; /* Kept fixed height for desktop consistency */
+  height: 370px; /* Kept fixed height for desktop consistency */
   box-shadow: 5px 5px 5px 5px rgb(174, 175, 177);
   border-radius: 20px;
   margin-top: 30px;
