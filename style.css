@@ -748,3 +748,8 @@ textarea {
     gap: 15px;
   }
 }
+
+.express {
+  width: 80px; /* smaller than default */
+  height: auto;
+}
