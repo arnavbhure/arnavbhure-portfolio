@@ -23,12 +23,21 @@ function ProjectLinks({ project }) {
   return (
     <div className="flex flex-wrap gap-3">
       {project.live && (
-        <Button href={project.live} variant="secondary" className="min-h-10 px-4 py-2">
+        <Button
+          href={project.live}
+          variant="secondary"
+          className="min-h-10 px-4 py-2"
+        >
           Live
         </Button>
       )}
       {project.github && (
-        <Button href={project.github} variant="quiet" className="min-h-10 px-3 py-2" icon={false}>
+        <Button
+          href={project.github}
+          variant="quiet"
+          className="min-h-10 px-3 py-2"
+          icon={false}
+        >
           <FiGithub aria-hidden="true" className="size-4" />
           GitHub
         </Button>
@@ -49,19 +58,28 @@ function CityLinkSpotlight({ project }) {
       <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="lg:sticky lg:top-28 lg:h-fit">
           <Reveal>
-            <p className="mb-4 font-display text-xs font-semibold uppercase text-signal-cyan">Featured build</p>
+            <p className="mb-4 font-display text-xs font-semibold uppercase text-signal-cyan">
+              Featured build
+            </p>
             <h3 className="font-display text-6xl font-black leading-[0.86] text-white sm:text-8xl lg:text-9xl">
               City
               <span className="block text-outline">Link</span>
             </h3>
-            <p className="mt-7 max-w-lg text-lg leading-8 text-white/70">{project.summary}</p>
+            <p className="mt-7 max-w-lg text-lg leading-8 text-white/70">
+              {project.summary}
+            </p>
             <div className="mt-8">
               <ProjectLinks project={project} />
             </div>
           </Reveal>
         </div>
 
-        <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           <motion.div variants={fadeUp} className="citylink-preview">
             <div className="city-map" aria-hidden="true">
               <span className="node node-a" />
@@ -74,8 +92,12 @@ function CityLinkSpotlight({ project }) {
             </div>
             <div className="citylink-interface">
               <div>
-                <span className="font-mono text-xs uppercase text-signal-cyan">student relocation OS</span>
-                <p className="mt-3 font-display text-3xl font-bold text-white">Find your next city rhythm.</p>
+                <span className="font-mono text-xs uppercase text-signal-cyan">
+                  student relocation OS
+                </span>
+                <p className="mt-3 font-display text-3xl font-bold text-white">
+                  Find your next city rhythm.
+                </p>
               </div>
               <div className="interface-list">
                 <span>roommate match</span>
@@ -85,10 +107,15 @@ function CityLinkSpotlight({ project }) {
             </div>
           </motion.div>
 
-          <motion.div variants={fadeUp} className="mt-8 grid gap-px bg-white/10">
+          <motion.div
+            variants={fadeUp}
+            className="mt-8 grid gap-px bg-white/10"
+          >
             {points.map((point, index) => (
               <div key={point.label} className="case-row">
-                <span className="font-mono text-xs text-signal-cyan/70">0{index + 1} / {point.label}</span>
+                <span className="font-mono text-xs text-signal-cyan/70">
+                  0{index + 1} / {point.label}
+                </span>
                 <p>{point.value}</p>
               </div>
             ))}
@@ -104,7 +131,11 @@ function CityLinkSpotlight({ project }) {
 }
 
 function ProjectVisual({ project, index }) {
-  const visualType = project.title.includes("Tic") ? "game" : project.title.includes("Amazon") ? "store" : "product";
+  const visualType = project.title.includes("Tic")
+    ? "game"
+    : project.title.includes("Amazon")
+      ? "store"
+      : "product";
 
   return (
     <div className={`project-visual accent-${project.accent}`}>
@@ -141,12 +172,20 @@ function ProjectRow({ project, index }) {
 
   return (
     <Reveal className="project-row">
-      <div className={`grid items-center gap-8 lg:grid-cols-2 ${flipped ? "lg:[&>*:first-child]:order-2" : ""}`}>
+      <div
+        className={`grid items-center gap-8 lg:grid-cols-2 ${flipped ? "lg:[&>*:first-child]:order-2" : ""}`}
+      >
         <ProjectVisual project={project} index={index} />
         <div className="project-copy">
-          <p className="mb-4 font-display text-xs font-semibold uppercase text-signal-cyan">{project.type}</p>
-          <h3 className="font-display text-4xl font-bold leading-none text-white sm:text-6xl">{project.title}</h3>
-          <p className="mt-6 max-w-xl text-lg leading-8 text-white/70">{project.summary}</p>
+          <p className="mb-4 font-display text-xs font-semibold uppercase text-signal-cyan">
+            {project.type}
+          </p>
+          <h3 className="font-display text-4xl font-bold leading-none text-white sm:text-6xl">
+            {project.title}
+          </h3>
+          <p className="mt-6 max-w-xl text-lg leading-8 text-white/70">
+            {project.summary}
+          </p>
           <div className="mt-7">
             <TechTags stack={project.stack} />
           </div>

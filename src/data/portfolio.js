@@ -21,16 +21,32 @@ export const navItems = [
 ];
 
 export const socials = [
-  { label: "LinkedIn", href: "https://in.linkedin.com/in/arnav-bhure-82a24b37b", icon: "linkedin" },
+  {
+    label: "LinkedIn",
+    href: "https://in.linkedin.com/in/arnav-bhure-82a24b37b",
+    icon: "linkedin",
+  },
   { label: "GitHub", href: "https://github.com/arnavbhure", icon: "github" },
-  { label: "Instagram", href: "https://www.instagram.com/_arnavbhure_/", icon: "instagram" },
-  { label: "WhatsApp", href: "https://wa.me/918380058042?text=Hello", icon: "whatsapp" },
-  { label: "Email", href: "mailto:arnavbhure1208@gmail.com?subject=Hello&body=Hi, I'd like to contact you.", icon: "mail" },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/_arnavbhure_/",
+    icon: "instagram",
+  },
+  {
+    label: "WhatsApp",
+    href: "https://wa.me/918380058042?text=Hello",
+    icon: "whatsapp",
+  },
+  {
+    label: "Email",
+    href: "mailto:arnavbhure1208@gmail.com?subject=Hello&body=Hi, I'd like to contact you.",
+    icon: "mail",
+  },
 ];
 
 export const hero = {
   name: "Arnav Bhure",
-  role: "Frontend Developer / Full-Stack Learner",
+  role: "Full Stack Developer Building Scalable Web Systems",
   statement: "Building systems people actually use.",
   subcopy:
     "I turn curiosity into interfaces, product ideas into working prototypes, and engineering practice into clear user experiences.",
@@ -57,7 +73,13 @@ export const projects = [
     accent: "cyan",
     live: "https://citylink-nine.vercel.app/",
     github: null,
-    stack: ["React", "Student relocation", "Housing discovery", "Service marketplace", "Product thinking"],
+    stack: [
+      "React",
+      "Student relocation",
+      "Housing discovery",
+      "Service marketplace",
+      "Product thinking",
+    ],
     problem:
       "Students moving to a new city often rely on scattered groups, unverified listings, and word-of-mouth for roommates, housing, and essential services.",
     solution:
@@ -117,12 +139,20 @@ export const skillGroups = [
   {
     category: "Frontend",
     signal: "interface",
-    skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Framer Motion"],
+    skills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Tailwind CSS",
+      "Bootstrap",
+      "Framer Motion",
+    ],
   },
   {
     category: "Backend",
     signal: "systems",
-    skills: ["Node.js", "Express.js", "REST APIs", "Authentication basics"],
+    skills: ["Node.js", "Express.js", "REST APIs", "Authentication with JWT"],
   },
   {
     category: "Database",
