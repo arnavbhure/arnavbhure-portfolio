@@ -157,7 +157,13 @@ export const skillGroups = [
   {
     category: "Database",
     signal: "data",
-    skills: ["PostgreSQL", "SQL", "Schema thinking", "Data relationships"],
+    skills: [
+      "PostgreSQL",
+      "MongoDB",
+      "SQL",
+      "Schema thinking",
+      "Data relationships",
+    ],
   },
   {
     category: "Tools",
