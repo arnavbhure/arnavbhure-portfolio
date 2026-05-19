@@ -72,7 +72,7 @@ export const projects = [
     year: "2026",
     accent: "cyan",
     live: "https://citylink-nine.vercel.app/",
-    github: null,
+    github: "https://github.com/arnavbhure/City-Link",
     stack: [
       "React",
       "Student relocation",
