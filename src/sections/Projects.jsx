@@ -206,7 +206,7 @@ export default function Projects() {
       <SectionHeading
         eyebrow="Featured projects"
         title="Product thinking, not project tiles."
-        kicker="Each build is framed as a small product system: user problem, interface decisions, stack choices, and the next iteration."
+        kicker=""
       />
       <CityLinkSpotlight project={featured} />
       <div className="mx-auto mt-20 max-w-7xl space-y-20">

@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FiCpu, FiDatabase, FiGitBranch, FiLayers, FiTerminal } from "react-icons/fi";
+import {
+  FiCpu,
+  FiDatabase,
+  FiGitBranch,
+  FiLayers,
+  FiTerminal,
+} from "react-icons/fi";
 import { skillGroups } from "../data/portfolio.js";
 import { fadeUp, stagger } from "../animations/variants.js";
 import Section from "../components/ui/Section.jsx";
@@ -10,14 +16,15 @@ const icons = [FiLayers, FiCpu, FiDatabase, FiGitBranch, FiTerminal];
 
 export default function Skills() {
   const [active, setActive] = useState(skillGroups[0].category);
-  const activeGroup = skillGroups.find((group) => group.category === active) ?? skillGroups[0];
+  const activeGroup =
+    skillGroups.find((group) => group.category === active) ?? skillGroups[0];
 
   return (
     <Section id="skills" className="section-y border-t border-white/10">
       <SectionHeading
         eyebrow="Skills & stack"
         title="A working system, grouped by use."
-        kicker="No icon trophy wall here. The stack is organized by how it supports product building."
+        kicker=""
       />
 
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.74fr_1.26fr]">
@@ -57,11 +64,18 @@ export default function Skills() {
           className="skill-system"
         >
           <div className="skill-system-header">
-            <span className="font-mono text-xs uppercase text-signal-cyan">{activeGroup.signal}</span>
-            <h3 className="font-display text-4xl font-bold text-white sm:text-6xl">{activeGroup.category}</h3>
+            <span className="font-mono text-xs uppercase text-signal-cyan">
+              {activeGroup.signal}
+            </span>
+            <h3 className="font-display text-4xl font-bold text-white sm:text-6xl">
+              {activeGroup.category}
+            </h3>
           </div>
 
-          <div className="skill-flow" aria-label={`${activeGroup.category} skills`}>
+          <div
+            className="skill-flow"
+            aria-label={`${activeGroup.category} skills`}
+          >
             {activeGroup.skills.map((skill, index) => (
               <motion.span
                 key={skill}
@@ -76,9 +90,13 @@ export default function Skills() {
           </div>
 
           <div className="terminal-readout" aria-hidden="true">
-            <span>$ stack.inspect --group {activeGroup.category.toLowerCase()}</span>
+            <span>
+              $ stack.inspect --group {activeGroup.category.toLowerCase()}
+            </span>
             <span>status: learning through shipped interfaces</span>
-            <span>output: reusable components, clear state, product-first UI</span>
+            <span>
+              output: reusable components, clear state, product-first UI
+            </span>
           </div>
         </motion.div>
       </div>

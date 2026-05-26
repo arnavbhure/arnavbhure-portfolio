@@ -12,7 +12,7 @@ export default function Profiles() {
       <SectionHeading
         eyebrow="Coding profiles"
         title="Practice signals from the developer console."
-        kicker="Competitive practice, public code, and profile hubs arranged like a control surface instead of a box grid."
+        kicker=""
       />
 
       <motion.div
@@ -22,7 +22,11 @@ export default function Profiles() {
         viewport={{ once: true, amount: 0.2 }}
         className="mx-auto max-w-7xl"
       >
-        <div className="console-window" role="list" aria-label="Coding profile links">
+        <div
+          className="console-window"
+          role="list"
+          aria-label="Coding profile links"
+        >
           <div className="console-top" aria-hidden="true">
             <span />
             <span />
@@ -40,13 +44,25 @@ export default function Profiles() {
               role="listitem"
               className="profile-line group"
             >
-              <span className="font-mono text-xs text-signal-cyan/70">0{index + 1}</span>
-              <span className="profile-icon">
-                {profile.icon ? <img src={profile.icon} alt="" /> : <FaGithub aria-hidden="true" className="size-5" />}
+              <span className="font-mono text-xs text-signal-cyan/70">
+                0{index + 1}
               </span>
-              <span className="font-display text-lg font-semibold text-white">{profile.name}</span>
-              <span className="hidden text-white/50 lg:inline">{profile.metric}</span>
-              <span className="ml-auto hidden font-mono text-xs uppercase text-white/40 lg:inline">{profile.value}</span>
+              <span className="profile-icon">
+                {profile.icon ? (
+                  <img src={profile.icon} alt="" />
+                ) : (
+                  <FaGithub aria-hidden="true" className="size-5" />
+                )}
+              </span>
+              <span className="font-display text-lg font-semibold text-white">
+                {profile.name}
+              </span>
+              <span className="hidden text-white/50 lg:inline">
+                {profile.metric}
+              </span>
+              <span className="ml-auto hidden font-mono text-xs uppercase text-white/40 lg:inline">
+                {profile.value}
+              </span>
               <FiArrowUpRight
                 aria-hidden="true"
                 className="size-4 text-white/40 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-signal-cyan"
